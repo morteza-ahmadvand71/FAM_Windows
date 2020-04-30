@@ -215,5 +215,10 @@ namespace Baran.Ferroalloy.Management.Maintenance
         {
             this.Close();
         }
+
+        private void CbShift_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
