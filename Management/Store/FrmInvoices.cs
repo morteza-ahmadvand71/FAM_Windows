@@ -135,5 +135,19 @@ namespace Baran.Ferroalloy.Management.Store
         {
             this.Close();
         }
+
+        private void BtmInvoiceItems_Click(object sender, EventArgs e)
+        {
+            if (dgvInvoice.CurrentRow != null)
+            {
+                FrmInvoiceItems frmInvoiceItems=new FrmInvoiceItems();
+                frmInvoiceItems.invoiceId = Convert.ToInt32(dgvInvoice.CurrentRow.Cells["InvoiceNumbrOfOwner"].Value.ToString());
+                frmInvoiceItems.Show();
+            }
+            else
+            {
+                RtlMessageBox.Show("لطفا یک سط راانتخاب کنید", "اخطار", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

@@ -62,6 +62,7 @@ namespace Baran.Ferroalloy.Management
                         employees.bitLogined = true;
                         db.Save();
                         frmManagement.staUser.Text = employees.nvcFirstname + " " + employees.nvcLastname;
+                        frmManagement.coIdLogined = employees.nvcCoID;
                         SetApplicationFacilities(employees.intPost, employees.intDepartment,
                             employees.intSubDepartment);
                         this.frmManagement.menLogIn.Enabled = false;
