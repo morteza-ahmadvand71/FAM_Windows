@@ -43,7 +43,7 @@ namespace Baran.Ferroalloy.Automation
         private IInvoiceItems _invoiceItems;
         private IBuyRequestItems _buyRequestItems;
         private IBuyRequests _buyRequests;
-
+        //
         public IBuyRequests BuyRequests
         {
             get
